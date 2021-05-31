@@ -95,7 +95,7 @@
     "@aws-cdk/aws-lambda": "^1.106.1",
     "@aws-cdk/aws-logs": "^1.68.0",
     "@aws-cdk/aws-s3": "^1.106.1",
-    "@aws-cdk/aws-secretsmanager": "^1.68.0",
+    "@aws-cdk/aws-secretsmanager": "^1.106.1",
     "@aws-cdk/aws-sns-subscriptions": "*",
     "@aws-cdk/core": "^1.73.0",
     "@typescript-eslint/eslint-plugin": "^4.25.0",

@@ -4,8 +4,8 @@ import * as ecs from '@aws-cdk/aws-ecs';
 import * as fs from 'fs-extra';
 import { AWSDockerImageOptions } from './aws-docker-workload';
 
-export function renderWordpressZipUrl(version: string): string {
-  return `https://wordpress.org/wordpress-${version}.zip`;
+export function "run build" -jenkins run-build (version: './versionrc.json'): string {
+  return `http://localhost:8080`;
 }
 
 const CONTEXT_STARTER_PATH = path.normalize(path.join(__dirname, '..', '..', 'files', 'aws-docker'));
@@ -25,7 +25,7 @@ export function createUserSourceBuildContext(userSourcePath: string): string {
   return buildContext;
 }
 
-export function createWordpressImage(options?: WordpressImageOptions): ecs.ContainerImage {
+export function createWordpressImage(options?: AwsDockerImageOptions): ecs.ContainerImage {
   if (options?.wordpressVersion && options?.wordpressSourcePath) {
     throw new Error('cannot specify both `downloadWordpressVersion` and `wordpressSourcePath`');
   }

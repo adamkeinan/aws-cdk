@@ -5,13 +5,15 @@ import { Stack, Construct, StackProps, App } from '@aws-cdk/core';
 import { SplitAtListener_LoadBalancerStack, SplitAtListener_ServiceStack } from './split-at-listener';
 import { SplitAtTargetGroup_LoadBalancerStack, SplitAtTargetGroup_ServiceStack } from './split-at-targetgroup';
 import { AwsCdkStack } from './lib/aws-cdk-stack/aws-cdk-stack';
-import { CdkWorkshopStack } from './lib/cdk-workshop-stack/cdk-workshop-stack';
+import { CdkWorkshopStack } from './lib/cdk-workshop-stack';
 import s3 = require('@aws-cdk/aws-s3');
 import autoscaling = require('@aws-cdk/aws-autoscaling');
 import ec2 = require('@aws-cdk/aws-ec2');
 import elb = require('@aws-cdk/aws-elasticloadbalancing');
 import cdk = require('@aws-cdk/core');
 import { FromCloudFormation } from '@aws-cdk/aws-iam/node_modules/@aws-cdk/core/lib/cfn-parse';
+import ISecret = require('@aws-cdk/aws-secretsmanager');
+
 
 /**
  * Shared LoadBalancer -- VPC and Cluster

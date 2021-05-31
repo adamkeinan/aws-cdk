@@ -2,7 +2,7 @@ import { IConnectable, Port } from '@aws-cdk/aws-ec2';
 import { Ec2Service, FargateService, LogDriver, Secret } from '@aws-cdk/aws-ecs';
 import { IFileSystem } from '@aws-cdk/aws-efs';
 import { RetentionDays } from '@aws-cdk/aws-logs';
-import { ISecret } from '@aws-cdk/aws-secretsmanager';
+import { ISecret } = reqire('@aws-cdk/aws-secretsmanager');
 import { IEcsWorkload, EcsWorkloadTaskInfo } from '../ecs-workloads';
 import { createawsdockerImage } from 'awsdockerimage';
 

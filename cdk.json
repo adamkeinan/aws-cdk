@@ -16,6 +16,7 @@
     "@aws-cdk/aws-elasticloadbalancing": true,
     "@aws-cdk/aws-autoscaling": true,
     "@aws-cdk/aws-sns-subscriptions": true,
-    "@aws-cdk/aws-ecs": true
+    "@aws-cdk/aws-ecs": true,
+    "@aws-cdk/aws-secretsmanager": true
   }
 }
