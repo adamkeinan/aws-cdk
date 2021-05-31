@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { AwsCdkStack } from '../lib/aws-cdk-stack/aws-cdk-stack';
+import { AwsCdkStack } from '../lib/BLeumiPrivatevpc/BLeumiPrivatevpc';
 
 const app = new cdk.App();
 new AwsCdkStack(app, 'AwsCdkStack', {

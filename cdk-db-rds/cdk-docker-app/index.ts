@@ -1,4 +1,4 @@
-import { AwsCdkStack } from '../../lib/aws-cdk-stack/aws-cdk-stack';
+import { AwsCdkStack } from '../../lib/BLeumiPrivatevpc/BLeumiPrivatevpc';
 import ec2 = require('@aws-cdk/aws-ec2');
 import ecs = require('@aws-cdk/aws-ecs');
 import cdk = require('@aws-cdk/core');
